@@ -1,3 +1,7 @@
+# Author: Siladittya Manna
+
+
+
 import pygame as aud
 import time, wave
 #import pymedia.audio.sound as sound
