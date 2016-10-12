@@ -1,3 +1,9 @@
+#Author: Siladittya Manna
+#bet: Alphabet or Number; Single Character; String Format
+#path: Path of the subfolders containing the Video
+#Basepath: PROJECT folder contains all the subfolders
+#OpenCV 2.4.13
+
 import cv2, time
 Basepath = "H:\PROJECT\\"
 vidext = ".mp4"
