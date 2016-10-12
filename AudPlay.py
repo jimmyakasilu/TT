@@ -1,16 +1,17 @@
 # Author: Siladittya Manna
-
+#bet: Alphabet or Number; Single Character; String Format
+# Basepath: Folder containing all the subfolders
+# path: subfolder path containing the audios
 
 
 import pygame as aud
 import time, wave
 #import pymedia.audio.sound as sound
 aud.mixer.init()
-Audpath = "H:\PROJECT\Alphabets\\"
-AudCap = "AudioCap\\"
-AudSmall = "AudioSmall\\"
+Basepath = "H:\PROJECT\\"
 audext = ".mp3"
 #.........................playing voice...................#
+#..............For '.wav' files using PyMedia..............#
 '''def VoicePlay(bet):
     f = wave.open('H:\PROJECT\Alphabets\Voices\wavfiles\\'+bet+'.wav','rb')
     samplerate = f.getframerate()
@@ -22,10 +23,8 @@ audext = ".mp3"
     snd.play(s)
     while snd.isPlaying():
         time.sleep(0.05)'''
-def AudioPlay(bet):
-    if bet.isupper():
-        path = Audpath+AudCap+bet+audext
-    if bet.islower():
-        path = Audpath+AudSmall+bet+audext
+#.......................................................#
+def AudioPlay(bet,path):
+    path = Basepath+path+bet+audext
     aud.mixer.music.load(path)
     aud.mixer.music.play()
